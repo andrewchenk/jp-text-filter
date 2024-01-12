@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import CSS from 'csstype';
 
-const style:  CSS.Properties = {
+const containerStyle:  CSS.Properties = {
+  fontSize: "1em",
   margin:"2em auto",
   maxWidth:"1000px",
+  fontFamily: "sans-serif"
+};
+
+const bigTextStyle:  CSS.Properties = {
+  fontSize: "1.5em",
   fontFamily: "sans-serif"
 };
 
@@ -35,7 +41,7 @@ const JapaneseTextFilter: React.FC = () => {
 
 
   return (
-    <div style={style}>
+    <div style={containerStyle}>
       <h1>Japanese Text Filter</h1>
 
       <p>A web app that isolates Japanese text from mixed text (for example, a subtitle file). For use with Yomichan/Yomibaba.</p>
@@ -51,7 +57,7 @@ const JapaneseTextFilter: React.FC = () => {
         <h2>Output</h2>
         <p>Will only contain Japanese characters and punctuation ？！。＂＃＄％＆’（）＊＋，－．／：；＜＝＞＠［＼］＾＿｀｛｜｝～「」</p>
         <button onClick={handleCopyToClipboard}>Copy Output to Clipboard</button>
-        <pre>{japaneseText}</pre>
+        <pre style={bigTextStyle}>{japaneseText}</pre>
 
       </div>
     </div>
