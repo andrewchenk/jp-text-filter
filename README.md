@@ -1,12 +1,12 @@
 # jp-text-filter
 
 A web app that isolates Japanese text from any text (for example, a subtitle file). 
-It is hosted here: [Github Pages](andrewchenk.github.io/jp-text-filter/).
+It is hosted here: [Github Pages](https://andrewchenk.github.io/jp-text-filter/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 If you want to build it yourself read the below instructions. 
 
-## Available Scripts
+## For Devs: Available Scripts  
 
 In the project directory, you can run:
 
